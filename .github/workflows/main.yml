@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run tests
-        run: npm cypress run
+        run: npm run cy:run
       - name: Upload Screenshoats reports
         if: failure()
         uses: actions/upload-artifact@v2
